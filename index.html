@@ -152,7 +152,7 @@
     /* 作品 */
     .projects {
       display: grid;
-      grid-template-columns: repeat(3, 1fr);
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
       gap: 25px;
     }
 
@@ -161,6 +161,9 @@
       border-radius: 18px;
       overflow: hidden;
       transition: 0.3s;
+      text-decoration: none;
+      color: inherit;
+      display: block;
     }
 
     .project:hover {
@@ -174,6 +177,15 @@
       align-items: center;
       justify-content: center;
       color: #777;
+    }
+
+    /* 特殊標籤樣式 */
+    .project-image.tech-badge {
+      background: #222;
+      color: #fff;
+      font-weight: bold;
+      font-size: 20px;
+      letter-spacing: 1px;
     }
 
     .project-info {
@@ -254,7 +266,6 @@
 
     /* 手機版 */
     @media (max-width: 800px) {
-
       nav {
         padding: 15px 5%;
       }
@@ -311,26 +322,20 @@
 
   <!-- 首頁 -->
   <header class="hero">
-
     <div class="hero-text">
-
       <div class="tag">HELLO, I'M A FRESHMAN 👋</div>
-
       <h1>
         我的
         <span>大學作品集</span>
       </h1>
-
       <p>
         大一新生，正在學習如何把自己的想法，
         一點一點變成真正的作品。
         這裡會記錄我從大一到大四的學習與成長。
       </p>
-
       <a href="#projects" class="hero-button">
         看看我的作品 →
       </a>
-
     </div>
 
     <div class="hero-card">
@@ -340,171 +345,132 @@
         把你的照片放在這裡
       </div>
     </div>
-
   </header>
 
 
   <!-- 關於我 -->
   <section id="about" class="about">
-
     <h2 class="section-title">About Me.</h2>
-
     <div class="about-content">
-
-      <p>
-        嗨！我是 XXX，目前是一名大一學生。
-      </p>
-
+      <p>嗨！我是 XXX，目前是一名大一學生。</p>
       <br>
-
       <p>
         我對設計、影像、媒體以及新事物都很有興趣。
         現在的我還在探索自己真正喜歡的方向，
         所以我想把大學四年的學習過程記錄下來。
       </p>
-
       <br>
-
       <p>
         這個網站不只是作品集，
         也是我從「什麼都不會」慢慢變成
         「可以做出自己的作品」的成長紀錄。
       </p>
-
     </div>
-
   </section>
 
 
   <!-- 作品 -->
   <section id="projects">
-
     <h2 class="section-title">My Works.</h2>
 
     <div class="projects">
 
-      <div class="project">
+      <!-- 新增：數位科技概論作業卡片（點擊可進入細部頁面） -->
+      <a href="digital-tech.html" class="project">
+        <div class="project-image tech-badge">
+          💻 數位科技概論
+        </div>
+        <div class="project-info">
+          <h3>數位科技概論課堂作業目錄</h3>
+          <p>
+            收錄 HTML 文字層級、多媒體應用、清單與表格、表單元件及 CSS 實驗等每週實作成果。
+          </p>
+        </div>
+      </a>
 
+      <div class="project">
         <div class="project-image">
           作品圖片
         </div>
-
         <div class="project-info">
           <h3>我的第一個作品</h3>
           <p>
             這裡放大一的第一個課堂作品。
           </p>
         </div>
-
       </div>
 
-
       <div class="project">
-
         <div class="project-image">
           作品圖片
         </div>
-
         <div class="project-info">
           <h3>課堂作業</h3>
           <p>
             記錄我在課堂中完成的作品與學習過程。
           </p>
         </div>
-
       </div>
 
-
       <div class="project">
-
         <div class="project-image">
           作品圖片
         </div>
-
         <div class="project-info">
           <h3>未來作品</h3>
           <p>
             這裡留給未來的自己。
           </p>
         </div>
-
       </div>
 
     </div>
-
   </section>
 
 
   <!-- 四年時間軸 -->
   <section id="timeline">
-
     <h2 class="section-title">My Journey.</h2>
-
     <div class="timeline">
-
       <div class="year">
         <div class="year-number">大一</div>
-
         <div>
           <h3>開始探索</h3>
-          <p>
-            認識大學、學習基礎技能，
-            嘗試不同類型的作品。
-          </p>
+          <p>認識大學、學習基礎技能，嘗試不同類型的作品。</p>
         </div>
       </div>
-
 
       <div class="year">
         <div class="year-number">大二</div>
-
         <div>
           <h3>開始累積</h3>
-          <p>
-            找到自己比較喜歡的方向，
-            開始累積更多完整作品。
-          </p>
+          <p>找到自己比較喜歡的方向，開始累積更多完整作品。</p>
         </div>
       </div>
-
 
       <div class="year">
         <div class="year-number">大三</div>
-
         <div>
           <h3>建立風格</h3>
-          <p>
-            嘗試大型專題、團隊合作，
-            建立自己的設計與創作風格。
-          </p>
+          <p>嘗試大型專題、團隊合作，建立自己的設計與創作風格。</p>
         </div>
       </div>
-
 
       <div class="year">
         <div class="year-number">大四</div>
-
         <div>
           <h3>完成作品集</h3>
-          <p>
-            整理四年作品、完成畢業專題，
-            把這個網站變成正式的個人作品集。
-          </p>
+          <p>整理四年作品、完成畢業專題，把這個網站變成正式的個人作品集。</p>
         </div>
       </div>
-
     </div>
-
   </section>
 
 
   <!-- 技能 -->
   <section>
-
     <h2 class="section-title">Skills.</h2>
-
     <div class="skills">
-
       <div class="skill">HTML</div>
       <div class="skill">CSS</div>
       <div class="skill">JavaScript</div>
@@ -513,33 +479,21 @@
       <div class="skill">攝影</div>
       <div class="skill">平面設計</div>
       <div class="skill">影片剪輯</div>
-
     </div>
-
   </section>
 
 
   <!-- 聯絡 -->
   <section id="contact" class="contact">
-
     <h2 class="section-title">Let's Connect.</h2>
-
-    <p>
-      如果你想看看我的作品，歡迎來找我。
-    </p>
-
-    <a href="mailto:your@email.com">
-      your@email.com
-    </a>
-
+    <p>如果你想看看我的作品，歡迎來找我。</p>
+    <a href="mailto:your@email.com">your@email.com</a>
   </section>
 
 
   <!-- Footer -->
   <footer>
-
     © 2026 XXX · My University Portfolio
-
   </footer>
 
 </body>

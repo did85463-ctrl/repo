@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>數位科技概論作業專區｜個人作品集</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: "Noto Sans TC", Arial, sans-serif;
+      background: #f7f6f2;
+      color: #222;
+      line-height: 1.7;
+    }
+
+    header {
+      padding: 60px 8% 30px;
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+
+    .back-link {
+      display: inline-block;
+      margin-bottom: 20px;
+      color: #666;
+      text-decoration: none;
+      font-size: 15px;
+    }
+
+    .back-link:hover {
+      color: #000;
+    }
+
+    h1 {
+      font-size: 36px;
+      margin-bottom: 10px;
+    }
+
+    .subtitle {
+      color: #666;
+      font-size: 16px;
+      margin-bottom: 40px;
+    }
+
+    main {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 0 8% 80px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 25px;
+    }
+
+    .card {
+      background: white;
+      border-radius: 16px;
+      padding: 30px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.03);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      transition: 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+    }
+
+    .card-tag {
+      font-size: 12px;
+      font-weight: bold;
+      letter-spacing: 1px;
+      color: #888;
+      text-transform: uppercase;
+      margin-bottom: 10px;
+    }
+
+    .card h3 {
+      font-size: 20px;
+      margin-bottom: 12px;
+    }
+
+    .card p {
+      color: #666;
+      font-size: 14px;
+      margin-bottom: 25px;
+      flex-grow: 1;
+    }
+
+    .card-btn {
+      display: inline-block;
+      padding: 10px 20px;
+      background: #222;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 25px;
+      font-size: 14px;
+      text-align: center;
+      transition: 0.2s;
+    }
+
+    .card-btn:hover {
+      background: #444;
+    }
+
+    footer {
+      padding: 25px;
+      text-align: center;
+      background: #222;
+      color: #888;
+      font-size: 13px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <a href="index.html" class="back-link">← 返回首頁</a>
+    <h1>💻 數位科技概論作業集</h1>
+    <p class="subtitle">記錄課堂中練習的 HTML 基礎結構、多媒體整合、表格清單、表單元件與 CSS 風格控制。</p>
+  </header>
+
+  <main>
+    <div class="grid">
+
+      <!-- 活動 01 -->
+      <div class="card">
+        <div>
+          <div class="card-tag">HTML 基礎</div>
+          <h3>活動 01：文字層級練習</h3>
+          <p>運用 h1~h3 階層標題、p 段落標籤以及 b/i/sub/sup 等標註語法，製作「水與生活」科學活動介紹頁。</p>
+        </div>
+        <!-- 請將 115123456 替換成您的學號 -->
+        <a href="01-html-text-115123456.html" target="_blank" class="card-btn">檢視作業 →</a>
+      </div>
+
+      <!-- 活動 02 -->
+      <div class="card">
+        <div>
+          <div class="card-tag">多媒體應用</div>
+          <h3>活動 02：多媒體任務卡</h3>
+          <p>整合 img 圖片標籤、audio 音訊與 video 影片元素，設計校園自然觀察任務卡。</p>
+        </div>
+        <a href="materials/02-html-media/02-html-media-115123456.html" target="_blank" class="card-btn">檢視作業 →</a>
+      </div>
+
+      <!-- 活動 03 -->
+      <div class="card">
+        <div>
+          <div class="card-tag">資料結構</div>
+          <h3>活動 03：清單與表格排版</h3>
+          <p>結合 ul/ol 有序與無序清單、table 欄位表格，撰寫「紙橋挑戰社」活動籌備規劃頁。</p>
+        </div>
+        <a href="03-html-plan-115123456.html" target="_blank" class="card-btn">檢視作業 →</a>
+      </div>
+
+      <!-- 活動 04 -->
+      <div class="card">
+        <div>
+          <div class="card-tag">互動元件</div>
+          <h3>活動 04：社團報名表單</h3>
+          <p>包含文字輸入框、下拉選單、單選與多選框及按鈕元件，構建放學後社團體驗報名介面。</p>
+        </div>
+        <a href="04-html-form-115123456.html" target="_blank" class="card-btn">檢視作業 →</a>
+      </div>
+
+      <!-- 活動 05-09 -->
+      <div class="card">
+        <div>
+          <div class="card-tag">CSS 實作</div>
+          <h3>活動 05–09：CSS 版型與選用作業</h3>
+          <p>深入學習選擇器、Grid/Flexbox 排版、RWD 響應式切換及 WAVE 無障礙對比檢測優化。</p>
+        </div>
+        <a href="CSS-05-115123456/index.html" target="_blank" class="card-btn">檢視作業 →</a>
+      </div>
+
+    </div>
+  </main>
+
+  <footer>
+    © 2026 XXX · 數位科技概論作業展示
+  </footer>
+
+</body>
+</html>
